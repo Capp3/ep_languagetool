@@ -1,0 +1,10 @@
+{
+  "ep_languagetool.checkGrammar": "Check Grammar",
+  "ep_languagetool.checking": "Checking...",
+  "ep_languagetool.errorsFound": "Found {count} error(s)",
+  "ep_languagetool.noErrors": "No errors found",
+  "ep_languagetool.error": "Error",
+  "ep_languagetool.suggestions": "Suggestions",
+  "ep_languagetool.accept": "Accept",
+  "ep_languagetool.reject": "Reject"
+}

@@ -1,0 +1,49 @@
+{
+  "name": "ep_languagetool",
+  "version": "0.1.0",
+  "description": "LanguageTool grammar and style checking plugin for Etherpad",
+  "keywords": [
+    "etherpad",
+    "plugin",
+    "languagetool",
+    "grammar",
+    "spell-check",
+    "proofreading"
+  ],
+  "author": "Dom Capparelli",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "scripts": {
+    "lint": "eslint index.js lib/ static/js/ --ext .js",
+    "lint:css": "stylelint 'static/css/*.css'",
+    "lint:fix": "eslint index.js lib/ static/js/ --ext .js --fix && stylelint 'static/css/*.css' --fix",
+    "format": "prettier --write '**/*.{js,json,css}' --ignore-path .prettierignore",
+    "validate": "npm run lint && npm run lint:css"
+  },
+  "files": [
+    "ep.json",
+    "index.js",
+    "lib/",
+    "static/",
+    "templates/",
+    "locales/",
+    "README.md"
+  ],
+  "peerDependencies": {
+    "ep_etherpad-lite": ">=1.5.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-node": "^11.1.0",
+    "prettier": "^3.2.5",
+    "stylelint": "^16.2.1",
+    "stylelint-config-standard": "^36.0.0"
+  }
+}

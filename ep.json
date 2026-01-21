@@ -1,0 +1,20 @@
+{
+  "parts": [
+    {
+      "name": "main",
+      "hooks": {
+        "loadSettings": "ep_languagetool/index:loadSettings",
+        "clientVars": "ep_languagetool/index:clientVars",
+        "expressCreateServer": "ep_languagetool/index:expressCreateServer",
+        "padInitToolbar": "ep_languagetool/index:padInitToolbar",
+        "eejsBlock_editorCss": "ep_languagetool/index:eejsBlock_editorCss"
+      },
+      "client_hooks": {
+        "postAceInit": "ep_languagetool/static/js/languagetool:postAceInit",
+        "aceEditEvent": "ep_languagetool/static/js/languagetool:aceEditEvent",
+        "acePopulateDOMLine": "ep_languagetool/static/js/languagetool:acePopulateDOMLine",
+        "aceAttribsClasses": "ep_languagetool/static/js/languagetool:aceAttribsClasses"
+      }
+    }
+  ]
+}
