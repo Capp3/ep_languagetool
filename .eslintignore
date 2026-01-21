@@ -1,0 +1,8 @@
+node_modules/
+.cursor/
+memory-bank/
+docs/
+temp/
+scripts/
+*.min.js
+package-lock.json

@@ -1,0 +1,28 @@
+# Development files
+memory-bank/
+.cursor/
+.git/
+.vscode/
+*.code-workspace
+
+# Documentation (keep README.md)
+docs/
+*.md
+!README.md
+
+# Build/test files
+node_modules/
+*.log
+.DS_Store
+.env
+.env.local
+
+# Keep these
+!ep.json
+!package.json
+!index.js
+!lib/
+!static/
+!templates/
+!locales/
+!README.md
